@@ -1,7 +1,7 @@
 $(function(){
     //get dom
     var $name = $('#name'),
-        $tel = $('tel'),
+        $tel = $('#tel'),
         $psw = $('#psw'),
         $vfcode = $('#vfcode'),
         $getcode = $('#getcode'),
