@@ -48,19 +48,21 @@ $(function(){
         var $data = $(field),
             $msg = $(field + '-validation-msg');
         //validate null
-        if($data.val()=== ''){
-            $msg.html('不能为空!');
-            $data.select();//设置焦点
-            return false;
-        }
+        // if(field !== '#vfcode'){
+            if($data.val()=== ''){
+                $msg.html('不能为空!');
+                $data.select();//设置焦点
+                return false;
+            }
+        // }
         if(field == '#name'){
             if(/[^\u4E00-\u9FA5\w]/.test($data.val())){
                 $msg.html('用户名仅支持中英文、数字和下划线,且不能为纯数字');
                 return false;
             }else if(!(/\D/.test($data.val()))){
-                $msg.html('用户名仅支持中英文、数字和下划线,且不能为纯数字');
+                $msg.html('用户名仅支持中英文、数字和下划线,'+$('<br>')+'且不能为纯数字');
                 return false;
-            }
+            }   
         }
         else if(field == '#tel'){
             if(!(/^1[34578]\d{9}$/.test($data.val()))){
