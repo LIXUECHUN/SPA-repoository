@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+}
+.main{
+    margin:50px auto;
+    width: 500px;
+    height: 400px;
+    font-size: 1.3em;
+    background-color: lightblue;
+}
+label,input{
+    margin:5px 0;
+    font-size: 1em;
+    padding-left: 5px;
+    width: 15em;
+}
+span{
+    color: red;
+}
+.main div{
+    margin:0 auto;
+    height: 20px;
+    width: 400px;
+    margin-left: 67px;
+    color: red;
+    font-size: 0.7em;
+}
+#vfcode{
+    width:7em
+}
+#getcode{
+    width: 7.5em;
+    background-color: #fff;
+}
+#psw{
+    margin-left: 1em;
+}
+#yanzhengma{
+    height: 10px;
+    width: 10px;
+}
+#vfcodetext{
+    display: none;
+    margin-left: 0px;
+}

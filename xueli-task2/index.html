@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度登录</title>
+    <link href="index.css" rel='stylesheet' type="text/css">
+
+</head>
+<body>
+    <div class="main">
+        <h1>欢迎注册</h1>
+
+        <lable>用户名</lable>
+        <input id="name" type="text" placeholder="请输入密码">
+        <span>*</span>
+        <br>
+        <div id="name-validation-msg"></div>
+
+        <lable>手机号</lable>
+        <input id="tel" type="text" placeholder="请输入手机号">
+        <span>*</span>
+        <br>
+        <div id="tel-validation-msg"></div>
+
+        <lable>密码</lable>
+        <input id="psw" type="password" placeholder="请输入密码">
+        <span>*</span>
+        <br>
+        <div id="psw-validation-msg"></div>
+
+        <lable>验证码</lable>
+        <input id="vfcode" type="text" placeholder="请输入验证码">
+        <input id="getcode" type="button" value="获取验证码" ><br>
+        <div id="vfcode-validation-msg"></div>
+        
+        <div id="yanzhengma">
+            <div id="vfcodetext">
+                请等待<span id='time'>5</span>秒
+            </div>
+        </div>
+
+        <input id="submit" type="submit" value="提交" ><br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
