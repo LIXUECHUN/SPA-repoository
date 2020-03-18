@@ -60,7 +60,7 @@ $(function(){
                 $msg.html('用户名仅支持中英文、数字和下划线,且不能为纯数字');
                 return false;
             }else if(!(/\D/.test($data.val()))){
-                $msg.html('用户名仅支持中英文、数字和下划线,'+$('<br>')+'且不能为纯数字');
+                $msg.html('用户名仅支持中英文、数字和下划线,且不能为纯数字');
                 return false;
             }   
         }
